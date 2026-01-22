@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2besosalcielo | Salon Hub</title>
+
+  <style>
+    :root {
+      --sage:#7A9E8E;
+      --sage-dark:#5E8274;
+      --bg:#f4f6f5;
+      --card:#ffffff;
+      --text:#0f1714;
+      --muted:rgba(15,23,20,.65);
+      --shadow:0 10px 28px rgba(0,0,0,.10);
+      --border: rgba(0,0,0,.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 22px 16px 50px;
+    }
+
+    .header {
+      text-align: center;
+    }
+
+    .logo {
+      width: min(260px, 60%);
+      display: block;
+      margin: 8px auto;
+    }
+
+    h1 {
+      margin: 6px 0 4px;
+      font-size: 24px;
+      letter-spacing: .4px;
+      text-transform: lowercase;
+    }
+
+    .sub {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    @media (min-width: 840px) {
+      .grid { grid-template-columns: 1.05fr .95fr; }
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 18px;
+      padding: 16px 14px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(0,0,0,.06);
+    }
+
+    .title {
+      font-weight: 900;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .pill {
+      display: inline-block;
+      background: rgba(122,158,142,.12);
+      color: var(--sage-dark);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 13px;
+      border: 1px solid rgba(122,158,142,.25);
+      margin-bottom: 10px;
+    }
+
+    .btnrow {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .btn {
+      flex: 1;
+      min-width: 170px;
+      text-align: center;
+      text-decoration: none;
+      padding: 12px 14px;
+      border-radius: 14px;
+      font-weight: 850;
+    }
+
+    .btn.primary {
+      background: var(--sage);
+      color: white;
+    }
+
+    .btn.ghost {
+      background: rgba(122,158,142,.10);
+      color: var(--sage-dark);
+      border: 1px solid rgba(122,158,142,.25);
+    }
+
+    .small {
+      font-size: 12px;
+      color: rgba(15,23,20,.6);
+      line-height: 1.35;
+    }
+
+    .iframewrap {
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    iframe {
+      width: 100%;
+      height: 520px;
+      border: none;
+    }
+
+    .progress {
+      margin-top: 10px;
+      padding: 12px;
+      border-radius: 14px;
+      background: linear-gradient(180deg, rgba(122,158,142,.10), rgba(122,158,142,.04));
+      border: 1px solid rgba(122,158,142,.25);
+    }
+
+    .stamps {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .stamp {
+      width: 54px;
+      height: 54px;
+      border-radius: 14px;
+      border: 2px dashed rgba(122,158,142,.55);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      color: rgba(94,130,116,.65);
+    }
+
+    .stamp.filled {
+      background: var(--sage);
+      color: white;
+      border: 2px solid var(--sage);
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,.15);
+      font-size: 16px;
+      margin-top: 8px;
+    }
+
+    .btn2 {
+      width: 100%;
+      padding: 12px;
+      border-radius: 14px;
+      border: none;
+      font-weight: 900;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .btn2.primary { background: var(--sage); color: white; }
+    .btn2.ghost { background: rgba(122,158,142,.10); border: 1px solid rgba(122,158,142,.25); }
+  </style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <div class="header">
+    <img src="logo.png" class="logo" />
+    <h1>2besosalcielo</h1>
+    <div class="sub">Salon hub • Website • Loyalty • Promotions</div>
+  </div>
+
+  <div class="grid">
+
+    <!-- LEFT -->
+    <div class="card">
+      <div class="title">Welcome</div>
+      <div class="pill">@2besosalcielo on Instagram</div>
+
+      <p class="small">
+        Premium hair services focused on healthy hair, shine, and long-lasting results.
+      </p>
+
+      <div class="btnrow">
+        <a class="btn primary" href="https://example.com" target="_blank">Visit Website</a>
+        <a class="btn ghost" href="https://instagram.com/2besosalcielo" target="_blank">Instagram</a>
+      </div>
+
+      <hr />
+
+      <div class="title">Digital Loyalty Card</div>
+      <div class="pill">4 visits → 50% off 5th</div>
+
+      <div class="progress">
+        <div class="stamps">
+          <div class="stamp">1</div>
+          <div class="stamp">2</div>
+          <div class="stamp">3</div>
+          <div class="stamp">4</div>
+        </div>
+      </div>
+
+      <input placeholder="Create your 4-digit PIN" />
+      <button class="btn2 ghost">Save PIN</button>
+
+      <button class="btn2 primary">Add Visit (Stylist)</button>
+
+      <input type="date" />
+      <div class="small">Birthday = $15 off on your birthday</div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="card">
+      <div class="title">Salon Website</div>
+      <div class="iframewrap">
+        <iframe src="https://example.com"></iframe>
+      </div>
+      <div class="small">
+        If the site does not load here, use the “Visit Website” button.
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
