@@ -27,9 +27,9 @@
     }
 
     .wrap {
-      max-width: 900px;
+      max-width: 980px;
       margin: 0 auto;
-      padding: 22px 16px 50px;
+      padding: 22px 16px 56px;
     }
 
     .header {
@@ -39,7 +39,7 @@
     .logo {
       width: min(260px, 60%);
       display: block;
-      margin: 8px auto;
+      margin: 8px auto 6px;
     }
 
     h1 {
@@ -50,9 +50,9 @@
     }
 
     .sub {
+      margin-bottom: 14px;
       color: var(--muted);
       font-size: 14px;
-      margin-bottom: 14px;
     }
 
     .grid {
@@ -61,8 +61,8 @@
       gap: 14px;
     }
 
-    @media (min-width: 840px) {
-      .grid { grid-template-columns: 1.05fr .95fr; }
+    @media (min-width: 900px) {
+      .grid { grid-template-columns: 1.02fr .98fr; }
     }
 
     .card {
@@ -100,24 +100,21 @@
 
     .btn {
       flex: 1;
-      min-width: 170px;
+      min-width: 190px;
       text-align: center;
       text-decoration: none;
       padding: 12px 14px;
       border-radius: 14px;
-      font-weight: 850;
+      font-weight: 900;
     }
 
-    .btn.primary {
-      background: var(--sage);
-      color: white;
-    }
-
+    .btn.primary { background: var(--sage); color: white; }
     .btn.ghost {
       background: rgba(122,158,142,.10);
       color: var(--sage-dark);
       border: 1px solid rgba(122,158,142,.25);
     }
+    .btn.dark { background: #0f1714; color: white; }
 
     .small {
       font-size: 12px;
@@ -189,7 +186,10 @@
     }
 
     .btn2.primary { background: var(--sage); color: white; }
-    .btn2.ghost { background: rgba(122,158,142,.10); border: 1px solid rgba(122,158,142,.25); }
+    .btn2.ghost {
+      background: rgba(122,158,142,.10);
+      border: 1px solid rgba(122,158,142,.25);
+    }
   </style>
 </head>
 
@@ -199,26 +199,27 @@
   <div class="header">
     <img src="logo.png" class="logo" />
     <h1>2besosalcielo</h1>
-    <div class="sub">Salon hub • Website • Loyalty • Promotions</div>
+    <div class="sub">Book • New Client • Reviews • Loyalty</div>
   </div>
 
   <div class="grid">
 
-    <!-- LEFT -->
+    <!-- LEFT COLUMN -->
     <div class="card">
-      <div class="title">Welcome</div>
-      <div class="pill">@2besosalcielo on Instagram</div>
-
-      <p class="small">
-        Premium hair services focused on healthy hair, shine, and long-lasting results.
-      </p>
+      <div class="title">Quick Links</div>
+      <div class="pill">@2besosalcielo</div>
 
       <div class="btnrow">
-        <a class="btn primary" href="https://example.com" target="_blank">Visit Website</a>
+        <a class="btn primary" href="https://2besosalcielo.square.site/" target="_blank">Book / Website</a>
+        <a class="btn ghost" href="https://form.jotform.com/251956350037154" target="_blank">New Client Form</a>
+      </div>
+
+      <div class="btnrow">
+        <a class="btn dark" href="http://share.google/mBONQ0R00ihZn4KmR" target="_blank">Leave a Google Review</a>
         <a class="btn ghost" href="https://instagram.com/2besosalcielo" target="_blank">Instagram</a>
       </div>
 
-      <hr />
+      <hr>
 
       <div class="title">Digital Loyalty Card</div>
       <div class="pill">4 visits → 50% off 5th</div>
@@ -232,23 +233,33 @@
         </div>
       </div>
 
-      <input placeholder="Create your 4-digit PIN" />
+      <input placeholder="Create your PIN (client)" />
       <button class="btn2 ghost">Save PIN</button>
-
       <button class="btn2 primary">Add Visit (Stylist)</button>
 
       <input type="date" />
       <div class="small">Birthday = $15 off on your birthday</div>
     </div>
 
-    <!-- RIGHT -->
+    <!-- RIGHT COLUMN -->
     <div class="card">
-      <div class="title">Salon Website</div>
+      <div class="title">Website</div>
       <div class="iframewrap">
-        <iframe src="https://example.com"></iframe>
+        <iframe src="https://2besosalcielo.square.site/"></iframe>
       </div>
+
+      <hr>
+
+      <div class="title">Reviews</div>
       <div class="small">
-        If the site does not load here, use the “Visit Website” button.
+        If you loved your service, a Google review helps the salon grow.
+      </div>
+
+      <div class="btnrow">
+        <a class="btn dark" href="http://share.google/mBONQ0R00ihZn4KmR" target="_blank">Write a Review</a>
+        <a class="btn ghost" href="https://www.google.com/search?q=2besosalcielo+hair+studio+goodyear+reviews" target="_blank">
+          Find Reviews
+        </a>
       </div>
     </div>
 
